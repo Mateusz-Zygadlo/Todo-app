@@ -1,7 +1,15 @@
+import AddItem from "./components/AddItem";
+import Item from "./components/Item";
+
 const App = () => {
-  return (
+  return(
     <div>
-      <h1 className="text-4xl font-semibold flex justify-center">Hello react redux typescript tailwind app</h1>
+      <AddItem />
+      <div className="flex justify-center items-center flex-col mt-10">
+        <Item
+          value="test"
+          checked={true} />
+      </div>
     </div>
   );
 }
