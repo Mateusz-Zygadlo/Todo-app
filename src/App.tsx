@@ -12,9 +12,7 @@ interface Task{
 const App = () => {
   const [isEditItem, setIsEditItem] = useState<boolean>(false);
   const [actualId, setActualId] = useState<number>(0);
-  const [appData, setAppData] = useState<any>([
-    {value: 'This is a test one', checked: true, id: Math.random() * 1000},
-  ])
+  const [appData, setAppData] = useState<any>([])
 
   const newTask = (task: Task) => {
     setAppData([...appData, task]);
